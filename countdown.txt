@@ -1,21 +1,10 @@
-#import timeit
-#file = open("string.txt", "rt")
-#string = file.read()
-#file.close()
+import timeit
 string = '1 2 3 4 5'
 b = string.split(' ')
 print(b)
 stringlength = len(b)
 print(stringlength)
-
-
 for i in range(0, stringlength):
 	print(b[i])
-#t2 = timeit.timeit()
-i = 0
-while i <= stringlength-1:
-	print(b[i])
-	i += 1
-#t3 = timeit.timeit()
 
-#print(t2,t3)
+
