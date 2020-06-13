@@ -1,0 +1,9 @@
+def foo():
+	global i
+	i = i + 1
+	return i
+#global i 
+i = 1
+foo()
+#print(foo(i))
+print(i)
