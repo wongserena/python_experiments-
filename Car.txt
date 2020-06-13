@@ -1,0 +1,18 @@
+class Car():
+	def exclaim(self, name):
+		self.name = name
+		print("I'm a " + name + "!")
+class Honda(Car):
+	def exclaim(self, name):
+		print("I'm a " + name + "!")
+		super().exclaim('my honda')
+	def need_a_push(self): 
+		print("A little help here?") 
+
+give_me_a_car = Car()
+give_me_a_honda = Honda()
+give_me_a_car.exclaim('my car')
+give_me_a_honda.exclaim('my honda')
+give_me_a_honda.need_a_push()
+print(give_me_a_car.name)
+print(give_me_a_honda.name)
