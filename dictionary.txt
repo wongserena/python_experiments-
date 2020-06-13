@@ -1,0 +1,8 @@
+d = {'mar' : {'v', 'ver'},
+	'b' : {'v', 'k'},
+	'w' : {'c', 'k', 'v'},
+	'm' : {'r', 'v', 'b'},
+	's' : {'o', 'v'} }
+for name, contents in d.items():
+	if ('v' in contents and not 'ver' in contents) or ('v' in contents and not 'c' in contents):
+		print(name)
