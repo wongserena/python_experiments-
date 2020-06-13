@@ -1,0 +1,12 @@
+a_string = 'aeioup'
+a_list = list(a_string)
+#x = a_list.index('i')
+#a_list.remove('p')
+#del a_list[x]
+#print(a_list)
+numlist1 = [number for number in range(1,6) if number % 2 == 1]
+numlist2 = [number for number in range(1,6) if number % 2 == 0]
+print(numlist1,numlist2)
+numlist1 += numlist2
+print(numlist1)
+print(sorted(numlist1))
