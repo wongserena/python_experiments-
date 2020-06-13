@@ -1,0 +1,24 @@
+import numpy as np
+num = int(input('type the number of elements: '))
+a = list()
+b = list()
+for i in range(1, num+1):
+	a.append(i)
+	i += 1
+for j in range(1, num+1):
+	b.append(j + num)
+	j += 1
+print(a)
+print(b)
+res = 0
+for k in range(0, num):
+	res += a[k] * b[k]
+c = [res]   
+print(c) 
+
+p = np.array(a)
+print(p)
+q = np.array(b)
+print(q)
+res2 = np.dot(p,q)
+print(res2)
