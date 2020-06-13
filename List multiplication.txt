@@ -1,0 +1,13 @@
+num_a = int(input('type the number of elements in a: '))
+num_b = int(input('type the number of elements in b: '))
+print(num_a)
+a = list()
+b = list()
+for i in range(0, num_a):
+	new_el_a = int(input('type an element to enter into a: '))
+	a.append(new_el_a)
+for i in range(0, num_b):
+	new_el_b = int(input('type an element to enter into b: '))
+	b.append(new_el_b)
+print(a)
+print(b)	
