@@ -1,0 +1,25 @@
+class Person():
+	def _init_(self, name):
+		self.name = name		
+		
+class Father(Person):
+	def _init_(self, name):
+		self.name = name 
+
+class Wife(Father):
+	def _init_(self, name):
+		self.name = name
+
+class Daughter(Father):
+	def _init_(self, name):
+		self.name = name 
+
+thomas = Father()
+serena = Daughter()
+doreen = Wife()
+
+print(thomas.name)
+
+
+
+	
